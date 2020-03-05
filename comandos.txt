@@ -1,0 +1,141 @@
+
+etec@L61M09 MINGW32 ~ (master)
+$ cd desktop
+
+etec@L61M09 MINGW32 ~/desktop (master)
+$ git clone https://github.com/FatimaAparecidaMagalhaes/git_atividade..git
+Cloning into 'git_atividade.'...
+warning: You appear to have cloned an empty repository.
+
+etec@L61M09 MINGW32 ~/desktop (master)
+$ ls
+desktop.ini          git_atividade/        'MySQL Workbench 6.3 CE.lnk'*  'Visual Studio 2017.lnk'*
+'GameMaker Studio'/  github-atividade.pdf  third.txt
+
+etec@L61M09 MINGW32 ~/desktop (master)
+$ cd git_atividade
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ code .
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git config --global user.name "Fatima Magalhães"
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git config --global user.email "fatymag13@gmail.com"
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git add third.txt
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git commit "Adicionando third.txt"
+error: pathspec 'Adicionando third.txt' did not match any file(s) known to git.
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git add git_atividade.txt
+fatal: pathspec 'git_atividade.txt' did not match any files
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   third.txt
+
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git add fourth.txt
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   fourth.txt
+        new file:   third.txt
+
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git commit "Adicionando fourth.txt"
+error: pathspec 'Adicionando fourth.txt' did not match any file(s) known to git.
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   fourth.txt
+        new file:   third.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    third.txt
+
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git commit "Removendo third.txt"
+error: pathspec 'Removendo third.txt' did not match any file(s) known to git.
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ ^C
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git reset third.txt
+fatal: ambiguous argument 'third.txt': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git add comandos.txt
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   comandos.txt
+        new file:   fourth.txt
+        new file:   third.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    third.txt
+
+
+etec@L61M09 MINGW32 ~/desktop/git_atividade (master)
